@@ -1,0 +1,115 @@
+
+/* General styling for the entire body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Light gray background for a clean look */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; /* Text color for better readability */
+}
+
+/* Header section styling */
+header {
+    background-color: #6c9286; /* A calming green header */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Container for main content */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Card-like container for content */
+}
+
+/* Styling for section titles */
+.container h2 {
+    color: #365b48; /* Deep green for section titles */
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Herb card layout using flexbox */
+.herb-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Individual herb card styling */
+.herb {
+    background-color: #e3f1dd; /* Light green background for cards */
+    border: 1px solid #6c9286; /* Border matching the theme */
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 30%; /* Three columns layout */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effects */
+}
+
+/* Herb card hover effect */
+.herb:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Herb card titles */
+.herb h2 {
+    color: #365b48; /* Deep green title */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Styling for herb card text */
+.herb p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #444; /* Slightly darker text for better contrast */
+}
+
+/* Footer section styling */
+footer {
+    text-align: center;
+    background-color: #6c9286; /* Same green as the header */
+    color: white;
+    padding: 15px 0;
+    font-size: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Media query for mobile responsiveness */
+@media(max-width: 768px) {
+    .herb {
+        width: 100%; /* Full width for smaller screens */
+        margin: 10px 0; /* Adjust spacing */
+    }
+
+    header h1 {
+        font-size: 2em; /* Smaller header text on mobile */
+    }
+
+    .container h2 {
+        font-size: 1.5em; /* Smaller section titles */
+    }
+}
