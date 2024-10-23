@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Virtual Herbal Garden - Discover Medicinal Plants">
+    <title>Virtual Herbal Garden</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6c9286;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .herb-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .herb {
+            background-color: #e3f1dd;
+            border: 1px solid #6c9286;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 15px;
+            width: 30%;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+        .herb h2 {
+            color: #365b48;
+        }
+        .herb p {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            background-color: #6c9286;
+            color: white;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media(max-width: 768px) {
+            .herb {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Virtual Herbal Garden</h1>
+        <p>Explore the world of medicinal plants</p>
+    </header>
+
+    <div class="container">
+        <h2>Our Medicinal Plants Collection</h2>
+        <div class="herb-card">
+            <!-- Medicinal Herb 1 -->
+            <div class="herb">
+                <h2>Turmeric</h2>
+                <p><strong>Medicinal Use:</strong> Anti-inflammatory</p>
+                <p><strong>Active Ingredient:</strong> Curcumin</p>
+                <p><strong>Cultivation Season:</strong> Spring</p>
+            </div>
+
+            <!-- Medicinal Herb 2 -->
+            <div class="herb">
+                <h2>Mint</h2>
+                <p><strong>Medicinal Use:</strong> Relieves headaches</p>
+                <p><strong>Active Ingredient:</strong> Menthol</p>
+                <p><strong>Cultivation Season:</strong> Summer</p>
+            </div>
+
+            <!-- Medicinal Herb 3 -->
+            <div class="herb">
+                <h2>Aloe Vera</h2>
+                <p><strong>Medicinal Use:</strong> Skin treatment</p>
+                <p><strong>Active Ingredient:</strong> Aloin</p>
+                <p><strong>Cultivation Season:</strong> Year-round</p>
+            </div>
+
+            <!-- Add more herbs here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Virtual Herbal Garden | Discover Nature's Healing Power</p>
+    </footer>
+
+</body>
+</html>
